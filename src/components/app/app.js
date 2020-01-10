@@ -1,14 +1,14 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import {
-    HomePage,
-    CartPage,
-    CartridgesPage,
-    ComplatePage,
-    LaptopsPage,
-    PrintersPage,
-    TonerPage
-} from '../pages';
+
+import HomePage from '../pages/home-page';
+import CartPage from '../pages/cart-page';
+import CartridgesPage from '../pages/cartridges-page';
+import ComplatePage from '../pages/complate-page';
+import LaptopsPage from '../pages/laptops-page';
+import PrintersPage from '../pages/printers-page';
+import TonerPage from '../pages/toner-page';
+
 import './app.scss';
 
 
