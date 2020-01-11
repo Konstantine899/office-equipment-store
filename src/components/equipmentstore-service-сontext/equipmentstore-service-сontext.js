@@ -2,7 +2,7 @@ import React from 'react';
 
 const {
     Provider: EquipmentstoreServiceProvider,
-    Consumer: EquipmentstoreServiceConsumer
+    Consumer: EquipmentstoreServiceConsumer,
 }= React.createContext();
 
 export {

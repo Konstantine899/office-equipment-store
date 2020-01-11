@@ -614,6 +614,248 @@ export default App;
 
 ![](img/008.jpg)
 
-Теперь я сделаю так что бы на printers отобразился список принтеров. Для того что бы отрендерить список я создам два компонента. Gt вый компонент будет называться printers-list.js , будет отвечать собственно за рендеринг списка. Ну а компонент printers-list-item 
+Теперь я сделаю так что бы на printers отобразился список принтеров. Для того что бы отрендерить список я создам два компонента. Gt вый компонент будет называться printers-list.js , будет отвечать собственно за рендеринг списка. Ну а компонент printers-list-item будет отвечать за рендеринг одного элемента списка.
+И начнем разработку с компонета printers-list-item и создаю наших типичных 3-ри файла.
+
+```
+//printers-list-item
+import React, { Fragment } from 'react';
+import './printers-list-item.scss';
+
+const PrintersListItem = ({ printer }) => {
+    const { name, price, coverImage } = printer;
+    return (
+        
+        <Fragment>
+            <img src ={coverImage} alt="cover" />
+            <span>{name}</span>
+            <span>{price}</span>
+        </Fragment>
+    );
 
 
+};
+
+export default PrintersListItem;
+
+
+```
+
+PrintersListItem это компонент который принимает в качестве свойств printer. В const прописываем из каких данных состоит printer { name, price, coverImage }. По умолчанию присваиваем эти значения из printer. 
+Далее достаю эти значения из printer. Lkz того что бы вернуть несколько фрагментов мне понадобится пакет Fragment из библиотеки react. Для этого импортирую Fragment из библиотеки react. 
+
+В return возвращаю тег Fragment внутри которого будет содержаться span который отображает {name} а второй который отображает {price}.
+Для лучшего импорта пробрасываю этот импорт через index.js
+
+Теперь точно так же создаю printer-list. Как обычно создаю 3-ри файла для компонента.
+
+```
+import React, {Component} from 'react';
+import PrintersListItem from '../printers-list-item';
+
+import './printers-list.scss';
+
+export default class PrintersList extends Component{
+    render(){
+        const {printers} = this.props;
+        return(
+            <ul>
+                {
+                    printers.map((printer) =>{
+                        return (
+                            <li key={printer.id}><PrintersListItem printer ={printer} /></li>
+                        )
+                    })
+                }
+            </ul>
+        )
+    }
+};
+
+```
+
+printer-list более интересный компонент потому что как только он загружается он будет запрашивать данные. Соответственно для этого компонента нужен метод жизненного. Поскольку у компонента есть жизненный цикл этот компонент должен быть компонентом жизненного цикла. Поэтому из, блиотеки react потребуется импортировать пакет Component. 
+Внутри класса я реализую метод render. Для того что бы отрендерить данные нужно получить список книг. Это будет свойство printers в котором будет содержаться массив принтеров которому мы присвоим по умолчинию метод props с помощью которого я и вытащу все данные из массива.
+Далее  я возвращаю этот самый отрендеренный массив в виде элементов списка.
+
+```
+<ul>
+                {
+                    printers.map((printer) =>{
+                        return (
+                            <li key={printer.id}><PrintersListItem printer ={printer} /></li>
+                        )
+                    })
+                }
+            </ul>
+
+```
+
+ Для его работоспособности import PrintersListItem from '../printers-list-item';
+
+ Для каждой книги я возвращаю элемент li внутри которого будет компонент PrintersListItem которому я передаю своство printer ={printer}. Для импорта id  элементов в теге li  пишу атрибут key и через метод деструктуризации вытаскиваю порядковое значение id каждого элемента списка.
+
+ Экспортирую в index.js
+
+ ```
+import PrintersList from './printers-list';
+
+export default PrintersList;
+
+ ```
+
+ И для тестовой проветки меняем код в printers-page.js.
+
+```
+import React from 'react';
+import PrintersList from '../../printers-list';
+
+const PrintersPage = () =>{
+    return(
+        <PrintersList printers={[ {
+            id: 1,
+            name: ' Лазерное МФУ Ricon SP 230SFNw ',
+            price: 509 + ' BYN ',
+            coverImage: './img/full_438.jpg'
+        },
+        {
+            id: 2,
+            name: ' Лазерное МФУ Ricon SP 330SN ',
+            price: 581.26 + ' BYN ',
+            coverImage: ''
+        },
+    ]} />
+    );
+};
+
+export default PrintersPage;
+
+```
+
+# Чтение данных из redux-store
+
+Для того что бы подключить компонент к redux-store мне необходимо использовать компонент высшего порядка который называется Connect. Импортирую его
+
+```
+//printers-list.js
+import React, {Component} from 'react';
+import PrintersListItem from '../printers-list-item';
+import {connect} from 'react-redux';
+
+import './printers-list.scss';
+
+ class PrintersList extends Component{
+    render(){
+        const {printers} = this.props;
+        return(
+            <ul>
+                {
+                    printers.map((printer) =>{
+                        return (
+                            <li key={printer.id}><PrintersListItem printer ={printer} /></li>
+                        )
+                    })
+                }
+            </ul>
+        )
+    }
+};
+
+export default connect()( PrintersList);
+
+```
+
+И так connect эта функция которая создает новый компонент. Для того что бы ее использовать нужно обернуть существующий компонент вот таким вот образом
+
+```
+export default connect()(PrintersList);
+
+```
+
+сonnect это функция которая возвращает функцию. Поэтому в первую функцию connect я должен передать конфигурацию как именно я хочу подключить PrintersList. А во вторую функция я передаю функцию которую хочу вернуть PrintersList. Вся эта констукция
+
+```
+export default connect()(PrintersList);
+
+```
+
+Вернет новый компонент который уже будет знать о redux-store и сможет с ним работать. 
+
+Но для того что бы работать с redux-store нужно определить конфигурацию connect.
+Первая часть конфигурации описывает какие данные компонент будет получать из redux-store. Форма store простая
+
+![](img/010.jpg)
+
+Именно этот массив я и хочу передать в компонент PrintersList. B для того что бы это сделать нужно определить функцию которая называется mapStateToProps эта функция принимает state и возвращает объект там где ключи это будут названия свойств которые я присвою компоненту.
+
+```
+const mapStateToProps = () =>{
+    return {
+        printers:state.printers
+    };
+};
+
+```
+
+Моэно эту функцию написать еще проще 
+
+
+```
+const mapStateToProps = ({printers}) =>{
+    retutn{printers};
+};
+
+```
+
+Ну и конечно же mapStateToProps нужно передать в функцию connect.
+
+```
+
+import React, {Component} from 'react';
+import PrintersListItem from '../printers-list-item';
+import {connect} from 'react-redux';
+
+import './printers-list.scss';
+
+class PrintersList extends Component{
+    render(){
+        const {printers} = this.props;
+        return(
+            <ul>
+                {
+                    printers.map((printer) =>{
+                        return (
+                            <li key={printer.id}><PrintersListItem printer ={printer} /></li>
+                        )
+                    })
+                }
+            </ul>
+        )
+    }
+};
+
+const mapStateToProps = ({printers}) =>{
+
+    return{printers};
+    
+    };
+
+export default connect(mapStateToProps)( PrintersList);
+
+```
+
+Теперь мой компонент будет получать принтеры из redux-store. 
+Убираю тестовые данные из printers-page.js.
+
+Беру данные из 
+
+![](img/011.jpg)
+
+и вставляю второй массив в
+
+![](img/012.jpg)
+
+![](img/013.jpg)
+
+Теперь данные из reduser попадают в printers-list.js и отображаются на экране.
+  

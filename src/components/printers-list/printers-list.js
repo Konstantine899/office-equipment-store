@@ -1,9 +1,14 @@
 import React, {Component} from 'react';
 import PrintersListItem from '../printers-list-item';
+import {connect} from 'react-redux';
+import {withPrintersstoreService} from '../hoc';
 
-import './printers-list.scss';
+import  './printers-list.scss';
 
-export default class PrintersList extends Component{
+class PrintersList extends Component{
+
+    componentDidMount(){}
+
     render(){
         const {printers} = this.props;
         return(
@@ -19,3 +24,11 @@ export default class PrintersList extends Component{
         )
     }
 };
+
+const mapStateToProps = ({printers}) =>{
+
+    return{printers};
+    
+    };
+
+export default withPrintersstoreService()(connect(mapStateToProps)( PrintersList));
