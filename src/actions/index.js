@@ -1,9 +1,9 @@
-
+import {equipment_loaded} from '../action-types';
 
 const equipmentLoaded = (newEquipment) =>{
 
     return{
-        type:'EQUIPMENT_LOADED',
+        type:{equipment_loaded},
         payload: newEquipment
     };
 

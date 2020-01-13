@@ -3,19 +3,7 @@ const initialState ={
 
 
 
-  printers:[ {
-    id: 1,
-    name: ' Лазерное МФУ Ricon SP 230SFNw ',
-    price: 509 + ' BYN ',
-    coverImage: './img/full_438.jpg'
-},
-{
-    id: 2,
-    name: ' Лазерное МФУ Ricon SP 330SN ',
-    price: 581.26 + ' BYN ',
-    coverImage: ''
-},
-]
+ 
   
 };
 

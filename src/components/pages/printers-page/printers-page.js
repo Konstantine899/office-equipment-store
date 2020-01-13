@@ -3,6 +3,7 @@ import PrintersList from '../../printers-list';
 
 const PrintersPage = () =>{
     return(
+        
         <PrintersList  />
     );
 };

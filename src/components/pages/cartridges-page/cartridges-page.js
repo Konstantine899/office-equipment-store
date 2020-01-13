@@ -1,7 +1,8 @@
 import React from 'react';
 
+
 const CartridgesPage = () =>{
-    return<div>Cartridges Page</div>;
+    return<main><h1>Cartridges Page</h1></main>;
 };
 
 export default CartridgesPage;
