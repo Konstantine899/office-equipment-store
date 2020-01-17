@@ -1,8 +1,18 @@
+$color__link__hover:#12888a;
+$color__link: #2f3035;
+$color__button__search-svg: #fff;
+$color__button__search-svg-background: #12888a;
+$contact__information-working-time: black;
+$contact__information-working-time-h2: #afafaf;
+$input__border__color: #d7d7d7;
+$input__color: #9E9C9C;
+
 .contact__information {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin: 30px 7px;
 }
 
 .contact__information-working-time {
@@ -10,40 +20,76 @@
 }
 
 .contact__information-working-time,
-p, span {
+p,
+span {
     font-size: 16px;
     margin: 0;
-    color:black;
+    color: $contact__information-working-time;
 }
 
 
 .contact__information-working-time,
 h2 {
-    color: #afafaf;
+    color: $contact__information-working-time-h2;
     margin: 0;
     font-size: 13px;
 }
-.contact__information-tell{
+
+.contact__information-mail{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contact__information-gmail-a, .contact__information-skype-a {
+    color: $color__link;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;  
+}
+.contact__information-gmail-a:hover,
+ .contact__information-skype-a:hover{
+    color: $color__link__hover;
+}
+
+.contact__information-gmail,
+ .contact__information-skype{
+    margin-bottom: 10px;
+}
+.contact__information-skype-a{
+    margin-left: 17px;
+    
+}
+
+
+.contact__information-tell {
     display: flex;
     flex-direction: column;
 }
 
-.contact__information-tell-mts, .contact__information-tell-velcome{
+.contact__information-tell-mts,
+.contact__information-tell-velcome {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
+
     // outline: 1px solid;
 }
 
 
 .contact__information-tell-a {
-    
-    color: #2f3035;
-    margin-left: 10px;
+    color: $color__link;
+    margin: 0 0 0 10px;
+    // margin-top: 0;
+    // margin-bottom: 0;
     padding: 0;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
 }
 
+.contact__information-tell-a:hover{
+    color: $color__link__hover;
+}
 
 
 form {
@@ -54,22 +100,22 @@ form {
 
 input {
     width: 100%;
-    height: 30px;
-    border: 1px solid #d7d7d7;
+    height: 34px;
+    border: 1px solid $input__border__color;
     outline: none;
-    color: #9E9C9C;
-    font-size: 17px;
+    color: $input__color;
+    font-size: 16px;
 }
 
-button {
+.button__magnifier {
     width: 40px;
     height: 34px;
     border: none;
-    background: #12888a;
+    background: $color__button__search-svg-background;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
 }
 
 .button__search {
-    fill: #fff;
+    fill: $color__button__search-svg;
 }

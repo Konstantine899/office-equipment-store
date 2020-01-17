@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 import HomePage from '../pages/home-page';
 import CartPage from '../pages/cart-page';
 import CartridgesPage from '../pages/cartridges-page';
-import ComplatePage from '../pages/complate-page';
+import CompletePage from '../pages/complete-page';
 import LaptopsPage from '../pages/laptops-page';
 import PrintersPage from '../pages/printers-page';
 import TonerPage from '../pages/toner-page';
@@ -34,7 +34,7 @@ const Navigation = () => {
                 <Link to="/laptops">Ноутбуки</Link>
             </li>
             <li>
-                <Link to="/complate">Запчасти</Link>
+                <Link to="/complete">Запчасти</Link>
             </li>
             <li>
                 <Link to="/printers">Принтеры</Link>
@@ -48,7 +48,7 @@ const Navigation = () => {
             <Route path="/cart" component={CartPage} />
             <Route path="/cartridges" component={CartridgesPage} />
             <Route path="/laptops" component={LaptopsPage} />
-            <Route path="/complate" component={ComplatePage} />
+            <Route path="/complete" component={CompletePage} />
             <Route path="/printers" component={PrintersPage} />
             <Route path="/toner" component={TonerPage} />
         </Switch>
