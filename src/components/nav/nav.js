@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import {Link} from 'react-router-dom';
 
 import HomePage from '../pages/home-page';
-import CartPage from '../pages/cart-page';
+import InkPage from '../pages/ink-page';
 import CartridgesPage from '../pages/cartridges-page';
 import CompletePage from '../pages/complete-page';
 import LaptopsPage from '../pages/laptops-page';
@@ -25,7 +25,7 @@ const Navigation = () => {
                 <Link to="/">Домашняя</Link>
             </li>
             <li>
-                <Link to="/cart">Корзина</Link>
+                <Link to="/ink">Чернила</Link>
             </li>
             <li>
                 <Link to="/cartridges">Картриджи</Link>
@@ -45,7 +45,7 @@ const Navigation = () => {
         </ul>
         </nav>
             <Route path="/" component={HomePage} exact/>
-            <Route path="/cart" component={CartPage} />
+            <Route path="/ink" component={InkPage} />
             <Route path="/cartridges" component={CartridgesPage} />
             <Route path="/laptops" component={LaptopsPage} />
             <Route path="/complete" component={CompletePage} />
