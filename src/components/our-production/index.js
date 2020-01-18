@@ -1,3 +1,5 @@
-import OurProductionNav from './our-production';
+import OurProduction from './our-production';
 
-export default OurProductionNav;
+
+export default OurProduction;
+

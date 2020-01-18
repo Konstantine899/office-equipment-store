@@ -3,7 +3,7 @@ import React from 'react';
 import Header from '../header';
 import ContactInformation from '../contact-information';
 import Main from '../main';
-import OurProductionNav from '../our-production';
+import OurProduction from '../our-production';
 import './app.scss';
 
 
@@ -16,7 +16,7 @@ const App = () => {
             <ContactInformation />
             <Header />
             <Main />
-            <OurProductionNav />
+            <OurProduction />
         </div>
     );
 };

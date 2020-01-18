@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-import Magnifier from '../contact-information/magnifier/magnifier';
+import Magnifier from '../../assets/svg/magnifier';
 import './contact-information.scss';
 
 const ContactInformation = () => {
@@ -18,14 +18,14 @@ const ContactInformation = () => {
 
             <div className="contact__information-mail">
                 <div className="contact__information-gmail">
-                    <img src={require('./img/gmail.png')} alt="gmail" />
+                    <img src={require('../../assets/img/contact-img/gmail.png')} alt="gmail" />
                     <Link to="officeEquipmentStore.gmail.com" className="contact__information-gmail-a">
                         OfficeEquipmentStore.gmail.com
                 </Link>
                 </div>
 
                 <div className="contact__information-skype">
-                    <img src={require('./img/skype.png')} alt="Skype" />
+                    <img src={require('../../assets/img/contact-img/skype.png')} alt="Skype" />
                     <Link to="Konstantine899" className="contact__information-skype-a">Konstantine899</Link>
                 </div>
             </div>
@@ -33,13 +33,13 @@ const ContactInformation = () => {
 
             <div className="contact__information-tell">
                 <div className="contact__information-tell-mts">
-                    <img src={require('./img/icon-mts.png')} alt="MTS" />
+                    <img src={require('../../assets/img/contact-img/icon-mts.png')} alt="MTS" />
                     <Link to="+375298918971" className="contact__information-tell-a" exact>
                         +375&nbsp;29&nbsp;891&nbsp;89&nbsp;71
                     </Link>
                 </div>
                 <div className="contact__information-tell-velcome">
-                    <img src={require('./img/icon-velcom.png')} width="20px" alt="Velkome" />
+                    <img src={require('../../assets/img/contact-img/icon-velcom.png')} width="20px" alt="Velkome" />
                     <Link to="+375298918971" className="contact__information-tell-a" exact>
                         +375&nbsp;29&nbsp;891&nbsp;89&nbsp;71
                     </Link>

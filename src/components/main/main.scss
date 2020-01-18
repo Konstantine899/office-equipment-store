@@ -2,13 +2,14 @@ main {
     margin-left: 0;
     max-width: 100%;
     height: 794px;
+    padding-bottom: 95px;
     background: #f7fbfe;
     z-index: 0;
 }
 
 .main__wrapper {
     clip-path: circle(1059px at 190px -263px);
-    background: url("./img/7.jpg") no-repeat left;
+    background: url("../../assets/img/main-img/7.jpg") no-repeat left;
 }
 
 .main__overlay {

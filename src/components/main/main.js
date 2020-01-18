@@ -26,7 +26,7 @@ const Main = () => {
 
                 </div>
                 <div className="main__offset-printer">
-                    <img className="main__offset-printer-img" src={require('./img/printer.png')} alt="Принтер" />
+                    <img className="main__offset-printer-img" src={require('../../assets/img/main-img/printer.png')} alt="Принтер" />
                     <div className="button__catalog">
                         <button className="button__catalog-btn"  type="submit">Перейти в каталог</button>
                     </div>
