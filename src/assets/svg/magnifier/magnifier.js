@@ -4,7 +4,7 @@ export default class Magnifier extends Component{
     render(){
         return(
             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="20px" height="20px" viewBox="0 0 485.213 485.213" 
+	  viewBox="0 0 485.213 485.213" 
 	 xmlSpace="preserve" className="button__search">
          
 		<path d="M471.882,407.567L360.567,296.243c-16.586,25.795-38.536,47.734-64.331,64.321l111.324,111.324

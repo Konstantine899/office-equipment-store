@@ -6,9 +6,7 @@ const Main = () => {
     return (
         <main>
             <div className="main__wrapper">
-                <div className="main__overlay">
-
-                </div>
+                <div className="main__overlay"></div>
 
             </div>
 

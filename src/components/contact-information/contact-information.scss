@@ -20,7 +20,7 @@ $input__color: #9E9C9C;
     align-items: center;
 }
 
-.contact__information-working-time,
+.contact__information-working-time
 p,
 span {
     font-size: 16px;
@@ -29,7 +29,7 @@ span {
 }
 
 
-.contact__information-working-time,
+.contact__information-working-time
 h2 {
     color: $contact__information-working-time-h2;
     margin: 0;
@@ -119,4 +119,6 @@ input {
 
 .button__search {
     fill: $color__button__search-svg;
+    width: 20px;
+    height: 20px;
 }

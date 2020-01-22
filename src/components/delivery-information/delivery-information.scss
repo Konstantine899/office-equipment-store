@@ -1,0 +1,126 @@
+.delivery__information {
+    max-width: 100%;
+    background: linear-gradient(90deg, #12888a 0%, #8b67b1 100%);
+}
+
+
+
+.delivery__information-items {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 30px;
+}
+
+.delivery__information-items,
+p,
+strong {
+    font-size: 16px;
+    color: white;
+}
+
+.delivery__information-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 8px;
+}
+
+.delivery__information-item-1,
+.delivery__information-item-2,
+.delivery__information-item-3,
+.delivery__information-item-4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.delivery__information-item-2-svg {
+    fill: #8A2BE2;
+    width: 30px;
+    height: 30px;
+
+}
+
+.delivery__information-item-2-svg:hover {
+    width: 40px;
+    height: 40px;
+    fill: #8813dc;
+}
+
+.map__svg {
+    width: 25px;
+    height: 25px;
+    fill: #8A2BE2;
+}
+
+.map__svg:hover {
+    width: 33px;
+    height: 33px;
+    fill: #8813dc;
+}
+
+.certificate__svg {
+    width: 25px;
+    height: 25px;
+    fill: #8A2BE2;
+}
+
+.certificate__svg:hover {
+    width: 35px;
+    height: 35px;
+    fill: #8813dc;
+}
+
+.operator__svg{
+    width: 30px;
+    height: 30px;
+    fill: #8A2BE2;
+}
+.operator__svg:hover{
+    width: 36px;
+    height: 36px;
+    fill: #8813dc;
+}
+
+.delivery__information-learn-more {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    transform: rotate(-45deg);
+    background: #fff;
+    width: 132px;
+    height: 132px;
+    margin: 0 40px;
+}
+
+
+.delivery__information-learn-more-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #8b67b1;
+    box-shadow: 0px 5px 5px 0px rgba(90, 6, 151, 0.35);
+    border-radius: 15px;
+    width: 108px;
+    height: 108px;
+    transition: all 0.3s ease-out;
+}
+
+.delivery__information-learn-more-inner-a {
+    border-bottom: none;
+    transform: rotate(45deg);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.delivery__information-learn-more-inner:hover {
+    background-color: #8813dc;
+}
