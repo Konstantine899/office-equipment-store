@@ -1,0 +1,63 @@
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+    max-width: 100%;
+    margin: 100px 50px;
+}
+
+footer h4{
+    font-size: 24px;
+}
+
+.footer__info{
+    // outline: 1px solid #000;
+}
+
+.footer__info p{
+    font-size: 22px;
+    color: black;
+
+}
+
+.footer__info-carts{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    // outline: 1px solid #000;  
+}
+.visa, .maestro, .mastercard{
+    width: 80px;
+    height: 80px;
+    // outline: 1px solid #000;
+}
+
+
+
+.footer__menu{
+    // outline: 1px solid #000;
+}
+
+
+.footer__contacts{
+    display: flex;
+    flex-direction: column;
+    // outline: 1px solid #000;
+}
+.footer__contacts a{
+    font-size: 22px;
+    padding: 5px;
+    color: #000;
+}
+
+.footer__contacts a:hover{
+    text-decoration: underline;
+}
+
+.footer__contacts p{
+    margin: 10px;
+    font-size: 22px;
+    color: #000;
+}

@@ -6,6 +6,10 @@ import Main from '../main';
 import OurProduction from '../our-production';
 import DeliveryInformation from '../delivery-information';
 import Partners from '../partners';
+import Info from '../info';
+import Footer from '../footer';
+
+
 import './app.scss';
 
 
@@ -21,6 +25,8 @@ const App = () => {
             <OurProduction />
             <DeliveryInformation />
             <Partners />
+            <Info />
+            <Footer />
         </div>
     );
 };
