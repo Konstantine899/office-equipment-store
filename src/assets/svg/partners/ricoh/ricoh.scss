@@ -1,9 +1,19 @@
+
+$ricoh__width: 15rem;
+$ricoh__height: 15rem;
+$ricoh__fill: #D3D3D3;
+$ricoh__fill-hover: red;
+
+
+.ricoh{
+    font-size: 10px;
+}
 .ricoh {
-    width: 150px;
-    height: 150px;
-    fill: #D3D3D3;
+    width: $ricoh__width;
+    height: $ricoh__height;
+    fill: $ricoh__fill;
 }
 
 .ricoh:hover {
-    fill: red;
+    fill: $ricoh__fill-hover;
 }

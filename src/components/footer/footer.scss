@@ -1,14 +1,25 @@
+$background__color:#f7fbfe;
+$footer__p: black;
+$footer__contacts__a__color: black;
+$fontSize: 2.2rem;
+$fontSize__h4: 2.4rem;
+
+footer{
+    font-size: 10px;
+}
+
 footer{
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     flex-direction: row;
+    background: $background__color;
     max-width: 100%;
-    margin: 100px 50px;
+    padding: 10rem 0rem;
 }
 
 footer h4{
-    font-size: 24px;
+    font-size:$fontSize__h4;
 }
 
 .footer__info{
@@ -16,8 +27,9 @@ footer h4{
 }
 
 .footer__info p{
-    font-size: 22px;
-    color: black;
+    font-size: $fontSize;
+    line-height: 1.6;
+    color: $footer__p;
 
 }
 
@@ -29,8 +41,8 @@ footer h4{
     // outline: 1px solid #000;  
 }
 .visa, .maestro, .mastercard{
-    width: 80px;
-    height: 80px;
+    width: 8rem;
+    height: 8rem;
     // outline: 1px solid #000;
 }
 
@@ -47,9 +59,9 @@ footer h4{
     // outline: 1px solid #000;
 }
 .footer__contacts a{
-    font-size: 22px;
-    padding: 5px;
-    color: #000;
+    font-size: $fontSize;
+    padding: .5rem;
+    color: $footer__contacts__a__color;
 }
 
 .footer__contacts a:hover{
@@ -57,7 +69,7 @@ footer h4{
 }
 
 .footer__contacts p{
-    margin: 10px;
-    font-size: 22px;
-    color: #000;
+    margin: 1rem;
+    font-size: $fontSize;
+    color: $footer__p;
 }

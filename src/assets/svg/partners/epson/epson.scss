@@ -1,11 +1,21 @@
+
+$epson__width: 15rem;
+$epson__height: 15rem;
+$epson__fill:#D3D3D3;
+$epson__fill-hover:#8d9bd7;
+
+.epson{
+    font-size: 10px;
+}
+
 .epson {
-    width: 150px;
-    height: 150px;
-    fill: #D3D3D3;
+    width: $epson__width;
+    height: $epson__height;
+    fill: $epson__fill;
     // outline: 1px solid #000;
 }
 
 .epson:hover {
    
-    fill: #8d9bd7;
+    fill: $epson__fill-hover;
 }

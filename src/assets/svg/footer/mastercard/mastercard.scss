@@ -1,21 +1,35 @@
-.mastercard__sty-1 {
-    width: 80px;
-    height: 80px;
+
+$masterCard__sty-1-width: 8rem;
+$masterCard__sty-1-height:8rem;
+$masterCard__sty-2-fill: #F7981D;
+$masterCard__sty-3-fill:  #F16622;
+$masterCard__sty-4-fill: #CB2026;
+$masterCard__sty-5-fill: #FFFFFF;
+
+
+.masterCard__sty-1{
+    font-size: 10px;
+}
+
+
+.masterCard__sty-1 {
+    width: $masterCard__sty-1-width;
+    height: $masterCard__sty-1-height;
     // outline: 1px solid #000; 
     enable-background: new 0 0 473.94 473.94;
 }
 
-.mastercard__sty-2 {
-    fill: #F7981D;;
+.masterCard__sty-2 {
+    fill: $masterCard__sty-2-fill;
 }
 
-.mastercard__sty-3 {
-    fill: #F16622;
+.masterCard__sty-3 {
+    fill: $masterCard__sty-3-fill;
 }
 
-.mastercard__sty-4 {
-    fill: #CB2026;
+.masterCard__sty-4 {
+    fill: $masterCard__sty-4-fill;
 }
-.mastercard__sty-5{
-    fill:#FFFFFF;
+.masterCard__sty-5{
+    fill:$masterCard__sty-5-fill;
 }

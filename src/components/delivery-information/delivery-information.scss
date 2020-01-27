@@ -1,6 +1,22 @@
+$line__gradient-one: #12888a;
+$line__gradient-two: #8b67b1;
+$delivery__strong: #fff;
+$delivery__information-img-background: #fff;
+$delivery__information-svg-fill: #8A2BE2;
+$delivery__information-svg-fill-hover: #8813dc;
+$learn__more__inner-background-hover:#8813dc;
+$learn__more__inner-background:#8b67b1;
+$delivery__information-learn-more-background: #fff;
+
+
+.delivery__information{
+    font-size: 10px;
+}
+
+
 .delivery__information {
     max-width: 100%;
-    background: linear-gradient(90deg, #12888a 0%, #8b67b1 100%);
+    background: linear-gradient(90deg, $line__gradient-one 0%, $line__gradient-two 100%);
 }
 
 
@@ -8,25 +24,25 @@
 .delivery__information-items {
     display: flex;
     justify-content: space-around;
-    margin: 0 30px;
+    margin: 0 3rem;
 }
 
 .delivery__information-items,
 p,
 strong {
-    font-size: 16px;
-    color: white;
+    font-size: 1.6rem;
+    color: $delivery__strong;
 }
 
 .delivery__information-img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
-    background-color: #fff;
-    margin: 0 8px;
+    background-color: $delivery__information-img-background;
+    margin: 0 .8rem;
 }
 
 .delivery__information-item-1,
@@ -41,51 +57,51 @@ strong {
 
 
 .delivery__information-item-2-svg {
-    fill: #8A2BE2;
-    width: 30px;
-    height: 30px;
+    fill: $delivery__information-svg-fill;
+    width: 3rem;
+    height: 3rem;
 
 }
 
 .delivery__information-item-2-svg:hover {
-    width: 40px;
-    height: 40px;
-    fill: #8813dc;
+    width: 4rem;
+    height: 4rem;
+    fill: $delivery__information-svg-fill-hover;
 }
 
 .map__svg {
-    width: 25px;
-    height: 25px;
-    fill: #8A2BE2;
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: $delivery__information-svg-fill;
 }
 
 .map__svg:hover {
-    width: 33px;
-    height: 33px;
-    fill: #8813dc;
+    width: 3.3rem;
+    height: 3.3rem;
+    fill: $delivery__information-svg-fill-hover;
 }
 
 .certificate__svg {
-    width: 25px;
-    height: 25px;
-    fill: #8A2BE2;
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: $delivery__information-svg-fill;
 }
 
 .certificate__svg:hover {
-    width: 35px;
-    height: 35px;
-    fill: #8813dc;
+    width: 3.5rem;
+    height: 3.5rem;
+    fill: $delivery__information-svg-fill-hover;
 }
 
 .operator__svg{
-    width: 30px;
-    height: 30px;
-    fill: #8A2BE2;
+    width: 3rem;
+    height: 3rem;
+    fill: $delivery__information-svg-fill;
 }
 .operator__svg:hover{
-    width: 36px;
-    height: 36px;
-    fill: #8813dc;
+    width: 3.6rem;
+    height: 3.6rem;
+    fill: $delivery__information-svg-fill-hover;
 }
 
 .delivery__information-learn-more {
@@ -94,10 +110,10 @@ strong {
     text-align: center;
     align-items: center;
     transform: rotate(-45deg);
-    background: #fff;
-    width: 132px;
-    height: 132px;
-    margin: 0 40px;
+    background: $delivery__information-learn-more-background;
+    width: 13.2rem;
+    height: 13.2rem;
+    margin: 0 4rem;
 }
 
 
@@ -106,21 +122,21 @@ strong {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: #8b67b1;
-    box-shadow: 0px 5px 5px 0px rgba(90, 6, 151, 0.35);
-    border-radius: 15px;
-    width: 108px;
-    height: 108px;
+    background:$learn__more__inner-background; 
+    box-shadow: 0rem .5rem .5rem 0rem rgba(90, 6, 151, 0.35);
+    border-radius: 1.5rem;
+    width: 10.8rem;
+    height: 10.8rem;
     transition: all 0.3s ease-out;
 }
 
 .delivery__information-learn-more-inner-a {
     border-bottom: none;
     transform: rotate(45deg);
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 700;
 }
 
 .delivery__information-learn-more-inner:hover {
-    background-color: #8813dc;
+    background-color: $learn__more__inner-background-hover;
 }

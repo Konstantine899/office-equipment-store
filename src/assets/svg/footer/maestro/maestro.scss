@@ -1,18 +1,31 @@
+$maestro__st-1-width: 8rem;
+$maestro__st-1-height: 8rem;
+$maestro__st-2-fill:#009DDD;
+$maestro__st-3-fill:#ED1C2E;
+$maestro__st-4-fill:#FFFFFF;
+
+
+
+
+.maestro__st-1{
+    font-size: 10px;
+}
+
 .maestro__st-1 {
-    width: 80px;
-    height: 80px;
+    width: $maestro__st-1-width;
+    height: $maestro__st-1-height;
     // outline: 1px solid #000; 
     enable-background: new 0 0 473.94 473.94;
 }
 
 .maestro__st-2 {
-    fill: #009DDD;
+    fill: $maestro__st-2-fill;
 }
 
 .maestro__st-3 {
-    fill: #ED1C2E;
+    fill: $maestro__st-3-fill;
 }
 
 .maestro__st-4 {
-    fill: #FFFFFF;
+    fill: $maestro__st-4-fill;
 }

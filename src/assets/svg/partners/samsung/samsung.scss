@@ -1,17 +1,29 @@
+$samsung__width: 15rem;
+$samsung__height:15rem;
+$samsung__fill: #D3D3D3;
+$samsung__fill-hover:#0964AF;
+$samsung__path:#F2F2F2;
+
+
+
+.samsung{
+    font-size: 10px;
+}
+
 .samsung {
-    width: 150px;
-    height: 150px;
+    width: $samsung__width;
+    height: $samsung__height;
     // outline: 1px solid #000;
 }
 
 .samsung__path-1 {
-    fill: #D3D3D3;
+    fill: $samsung__fill;
 }
 
 
 
 .samsung__path-1:hover {
-    fill: #0964AF;
+    fill: $samsung__fill-hover;
 }
 
 
@@ -22,6 +34,6 @@
 .samsung__path-7,
 .samsung__path-8,
 .samsung__path-9{
-    fill:#F2F2F2;
+    fill:$samsung__path;
 }
 

@@ -1,10 +1,19 @@
+$canon__width: 15rem;
+$canon__height: 15 rem;
+$canon__fill: #D3D3D3;
+$canon__fill-hover: #E85454;
+
+
 .canon {
-    width: 150px;
-    height: 150px;
-    fill: #D3D3D3;
+    font-size: 10px;
+}
+
+.canon {
+    width: $canon__width;
+    height: $canon__height;
+    fill: $canon__fill;
     // outline: 1px solid #000;
 }
-.canon:hover {
-    
-    fill: #E85454;
+.canon:hover {   
+    fill: $canon__fill-hover;
 }

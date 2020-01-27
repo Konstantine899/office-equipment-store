@@ -1,24 +1,35 @@
-.sty-1 {
-    width: 80px;
-    height: 80px;
+$visa__1-width: 8rem;
+$visa__1-height: 8rem;
+$visa__2-fill: #FFFFFF;
+$visa__3-fill: #F79F1A;
+$visa__4-fill: #059BBF;
+$visa__5-fill: #202121;
+
+.visa__1{
+    font-size: 10px;
+}
+
+.visa__1 {
+    width: $visa__1-width;
+    height: $visa__1-height;
     // outline: 1px solid #000; 
     enable-background: new 0 0 512 512;
 }
 
-.sty-2 {
-    fill: #FFFFFF;
+.visa__2 {
+    fill: $visa__2-fill;
 }
 
-.sty-3 {
-    fill: #F79F1A;
+.visa__3 {
+    fill: $visa__3-fill
 }
 
-.sty-4 {
-    fill: #059BBF;
+.visa__4 {
+    fill: $visa__4-fill;
 }
 
-.sty-5 {
+.visa__5 {
     opacity: 0.15;
-    fill: #202121;
+    fill: $visa__5-fill;
     enable-background: new;
 }

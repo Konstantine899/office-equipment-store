@@ -1,12 +1,24 @@
+$lenovo__width: 15rem;
+$lenovo__height: 15rem;
+$lenovo__fill: #D3D3D3;
+$lenovo__fill-hover:#4169E1;
+
+
+
+
 .lenovo{
-    width: 150px;
-    height: 150px;
+    font-size: 10px;
+}
+
+.lenovo{
+    width: $lenovo__width;
+    height: $lenovo__height;
     // outline: 1px solid #000;
-    fill: #D3D3D3;
+    fill: $lenovo__fill;
 }
 
 .lenovo:hover{
    
-    fill: #4169E1;
+    fill: $lenovo__fill-hover;
 }
 
