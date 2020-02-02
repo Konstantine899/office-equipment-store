@@ -1,75 +1,112 @@
-$background__color:#f7fbfe;
+$background__color: #f7fbfe;
 $footer__p: black;
 $footer__contacts__a__color: black;
 $fontSize: 2.2rem;
 $fontSize__h4: 2.4rem;
 
-footer{
-    font-size: 10px;
+footer {
+  font-size: 10px;
 }
 
-footer{
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row;
+  background: $background__color;
+  max-width: 100%;
+  padding: 10rem 5rem;
+}
+
+footer h4 {
+  font-size: $fontSize__h4;
+}
+
+.footer__info {
+  margin: 0 1rem;
+  // outline: 1px solid #000;
+}
+
+.footer__info p {
+  font-size: $fontSize;
+  line-height: 1.6;
+  color: $footer__p;
+}
+
+.footer__info-carts {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  // outline: 1px solid #000;
+}
+.visa,
+.maestro,
+.mastercard {
+  width: 8rem;
+  height: 8rem;
+  // outline: 1px solid #000;
+}
+
+.footer__menu {
+  margin: 0 1rem;
+  // outline: 1px solid #000;
+}
+
+.footer__menu__info {
+  margin: 0 1rem;
+  // outline: 1px solid #000;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+  // outline: 1px solid #000;
+}
+.footer__contacts a {
+  font-size: $fontSize;
+  padding: 0.5rem;
+  color: $footer__contacts__a__color;
+}
+
+.footer__contacts a:hover {
+  text-decoration: underline;
+}
+
+.footer__contacts p {
+  margin: 1rem;
+  font-size: $fontSize;
+  color: $footer__p;
+}
+
+@media (max-width: 1024px) {
+  footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
     flex-direction: row;
-    background: $background__color;
+    flex-wrap: wrap;
+    background: #f7fbfe;
     max-width: 100%;
-    padding: 10rem 0rem;
-}
-
-footer h4{
-    font-size:$fontSize__h4;
-}
-
-.footer__info{
-    // outline: 1px solid #000;
-}
-
-.footer__info p{
-    font-size: $fontSize;
-    line-height: 1.6;
-    color: $footer__p;
-
-}
-
-.footer__info-carts{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    // outline: 1px solid #000;  
-}
-.visa, .maestro, .mastercard{
-    width: 8rem;
-    height: 8rem;
-    // outline: 1px solid #000;
-}
-
-
-
-.footer__menu{
-    // outline: 1px solid #000;
-}
-
-
-.footer__contacts{
+    padding: 10rem 5rem;
+  }
+  .footer__info {
+    width: 30rem;
+    margin: 0 1rem;
+  }
+  .footer__menu {
+    width: 30rem;
+    margin: 0 1rem;
+  }
+  .footer__menu__info {
+    margin: 0 1rem;
+    width: 30rem;
+  }
+  .footer__contacts {
     display: flex;
     flex-direction: column;
-    // outline: 1px solid #000;
-}
-.footer__contacts a{
-    font-size: $fontSize;
-    padding: .5rem;
-    color: $footer__contacts__a__color;
-}
-
-.footer__contacts a:hover{
-    text-decoration: underline;
-}
-
-.footer__contacts p{
-    margin: 1rem;
-    font-size: $fontSize;
-    color: $footer__p;
+    margin: 0 1rem;
+    width: 30rem;
+  }
 }

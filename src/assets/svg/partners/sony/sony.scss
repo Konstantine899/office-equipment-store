@@ -1,21 +1,20 @@
 $sony__width: 15rem;
 $sony__height: 15rem;
-$sony__fill:#D3D3D3;
-$sony__fill-hover:#E85454;
+$sony__fill: #d3d3d3;
+$sony__fill-hover: #e85454;
 
-
-.sony{
-    font-size: 10px;
+.sony {
+  font-size: 10px;
 }
 
-.sony{
-    width: $sony__width;
-    height: $sony__height;
-    // outline: 1px solid #000;
-    fill: $sony__fill;
+.sony {
+  width: $sony__width;
+  height: $sony__height;
+  // outline: 1px solid #000;
+  fill: $sony__fill;
+  margin: 0 1rem;
 }
 
-.sony:hover{
-  
-    fill:$sony__fill-hover;
+.sony:hover {
+  fill: $sony__fill-hover;
 }

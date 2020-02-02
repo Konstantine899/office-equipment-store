@@ -1,35 +1,27 @@
-
 $xerox__width: 15rem;
 $xerox__height: 15rem;
-$xerox__fill:#D3D3D3;
-$xerox__fill-hover: #E85454;
+$xerox__fill: #d3d3d3;
+$xerox__fill-hover: #e85454;
 $xerox__circle-fill: #fff;
 
-
-
-
-.xerox{
-    font-size: 10px;
+.xerox {
+  font-size: 10px;
 }
-
-
 
 .xerox {
-    width: $xerox__width;
-    height: $xerox__height;
-    fill: $xerox__fill;
+  width: $xerox__width;
+  height: $xerox__height;
+  fill: $xerox__fill;
+  margin: 0 1rem;
 }
 .xerox:hover {
-   
-    fill: $xerox__fill-hover;
+  fill: $xerox__fill-hover;
 }
 
 .xerox__circle {
-    fill: $xerox__circle-fill;
+  fill: $xerox__circle-fill;
 }
 
 .xerox__path-1 {
-    fill: $xerox__circle-fill;
+  fill: $xerox__circle-fill;
 }
-
-

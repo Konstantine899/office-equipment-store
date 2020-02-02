@@ -1,129 +1,182 @@
-$color__link__hover:#12888a;
+$color__link__hover: #12888a;
 $color__link: #2f3035;
 $color__button__search-svg: #fff;
 $color__button__search-svg-background: #12888a;
 $contact__information-working-time: black;
 $contact__information-working-time-h2: #afafaf;
 $input__border__color: #d7d7d7;
-$input__color: #9E9C9C;
+$input__color: #9e9c9c;
 
-
-.contact__information{
-    font-size: 10px;
+.contact__information {
+  font-size: 10px;
 }
 
 .contact__information {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background: #f7fbfe;
-    padding: 3rem .7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: #f7fbfe;
+  padding: 3rem 0.7rem;
 }
 
 .contact__information-working-time {
-    align-items: center;
+  align-items: center;
+  margin: 0 1rem;
+  // outline: 1px solid #000;
 }
 
-.contact__information-working-time
-p,
+.contact__information-working-time p,
 span {
-    font-size: 1.6rem;
-    margin: 0;
-    color: $contact__information-working-time;
+  font-size: 1.6rem;
+  margin: 0;
+  color: $contact__information-working-time;
 }
 
-
-.contact__information-working-time
-h2 {
-    color: $contact__information-working-time-h2;
-    margin: 0;
-    font-size: 1.3rem;
+.contact__information-working-time h2 {
+  color: $contact__information-working-time-h2;
+  margin: 0;
+  font-size: 1.3rem;
 }
 
-.contact__information-mail{
-    display: flex;
-    flex-direction: column;
-    
+.contact__information-mail {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+  // outline: 1px solid #000;
 }
 
-.contact__information-gmail-a, .contact__information-skype-a {
-    color: $color__link;
-    font-size: 1.6rem;
-    font-weight: 600;
-    margin-left: 1rem;  
+.contact__information-gmail-a,
+.contact__information-skype-a {
+  color: $color__link;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-left: 1rem;
 }
 .contact__information-gmail-a:hover,
- .contact__information-skype-a:hover{
-    color: $color__link__hover;
+.contact__information-skype-a:hover {
+  color: $color__link__hover;
 }
 
 .contact__information-gmail,
- .contact__information-skype{
-    margin-bottom: 1rem;
+.contact__information-skype {
+  margin-bottom: 1rem;
 }
-.contact__information-skype-a{
-    margin-left: 1.7rem;
-    
+.contact__information-skype-a {
+  margin-left: 1.7rem;
 }
-
 
 .contact__information-tell {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+  // outline: 1px solid #000;
 }
 
 .contact__information-tell-mts,
 .contact__information-tell-velcome {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-
-    // outline: 1px solid;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  // outline: 1px solid;
 }
-
 
 .contact__information-tell-a {
-    color: $color__link;
-    margin: 0 0 0 1rem;
-    // margin-top: 0;
-    // margin-bottom: 0;
-    padding: 0;
-    font-size: 1.6rem;
-    font-weight: 600;
+  color: $color__link;
+  margin: 0 0 0 1rem;
+  padding: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 
-.contact__information-tell-a:hover{
-    color: $color__link__hover;
+.contact__information-tell-a:hover {
+  color: $color__link__hover;
 }
-
 
 form {
-    display: flex;
-    flex-direction: row;
-    width: 30rem;
+  display: flex;
+  flex-direction: row;
+  width: 30rem;
+  margin: 0 1rem;
+//   outline: 1px solid #000;
 }
 
 input {
-    width: 100%;
-    height: 3.4rem;
-    border: .1rem solid $input__border__color;
-    outline: none;
-    color: $input__color;
-    font-size: 1.6rem;
+  width: 100%;
+  height: 3.4rem;
+  border: 0.1rem solid $input__border__color;
+  outline: none;
+  color: $input__color;
+  font-size: 1.6rem;
 }
 
 .button__magnifier {
-    width: 4rem;
-    height: 3.4rem;
-    border: none;
-    background: $color__button__search-svg-background;
-    border-radius: 0 .5rem .5rem 0;
-    cursor: pointer;
+  width: 4rem;
+  height: 3.4rem;
+  border: none;
+  background: $color__button__search-svg-background;
+  border-radius: 0 0.5rem 0.5rem 0;
+  cursor: pointer;
 }
 
 .button__search {
-    fill: $color__button__search-svg;
-    width: 2rem;
-    height: 2rem;
+  fill: $color__button__search-svg;
+  width: 2rem;
+  height: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .contact__information {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #f7fbfe;
+    padding: 3rem 0.7rem;
+  }
+  form {
+    display: flex;
+    flex-direction: row;
+    width: 58rem;
+    margin: 3rem 0rem 0rem 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact__information {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #f7fbfe;
+    padding: 3rem 0.7rem;
+  }
+  form {
+    display: flex;
+    flex-direction: row;
+    width: 58rem;
+    margin: 3rem 0rem 0rem 1rem;
+  }
+  .contact__information-working-time {
+    align-items: center;
+    margin: 1rem 1rem;
+    // outline: 1px solid #000;
+  }
+  .contact__information-mail {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem;
+    // outline: 1px solid #000;
+  }
+  .contact__information-tell {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem;
+    // outline: 1px solid #000;
+  }
+  form {
+    display: flex;
+    flex-direction: row;
+    width: 34rem;
+    margin: 3rem 0rem 0rem 1rem;
+  }
 }

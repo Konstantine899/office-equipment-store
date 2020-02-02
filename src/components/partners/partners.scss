@@ -105,3 +105,81 @@ $partners__span:#fff;
 .partners__logo-item-11{
     margin: 0rem 0rem -4.4rem 0rem;
 }
+
+
+
+
+
+@media(max-width:1240px){
+    .partners__logo {
+        margin: 0rem 2rem;
+        padding-top: 13.8rem;
+        min-width: 36rem;
+        // outline: 1px solid #000;
+    }
+}
+
+
+@media(max-width:1024px){
+    .partners {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding-bottom: 6rem;
+        max-width: 100%;
+        background: #f7fbfe;
+        align-items: center;
+    }
+}
+
+@media(max-width:600px){
+
+    .partners__join__us-rhombus {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 13.8rem;
+        width: 33.5rem;
+        height: 50rem;
+        background-size: cover;
+        background-image: url(/static/media/2_0.89607e03.png);
+        background-position: center;
+        -webkit-clip-path: polygon(50% 0%, 50% 0%, 100% 25%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        clip-path: polygon(49% 0%, 50% 0%, 100% 25%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    }
+    .delivery__information-items {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin: 0px 3rem;
+        padding: 15rem 0rem 4rem 0rem;
+    }   
+
+    .main__offset-printer {
+        width: 29rem;
+        margin: 40rem 0rem 10rem 0rem;
+    }
+    .main__offset-printer-img {
+        width: 29rem;
+        z-index: 9;
+    }
+    .delivery__information-learn-more {
+        display: flex;
+        justify-content: baseline;
+        text-align: center;
+        align-items: center;
+        transform: rotate(-45deg);
+        background: #fff;
+        width: 13.2rem;
+        height: 13.2rem;
+        margin: -58rem 0rem 0rem 18rem;
+        padding: 1rem 1rem;
+        z-index: 999;
+    }
+    .partners__logo {
+        margin: 0rem 2rem;
+        padding-top: 13.8rem;
+        max-width: 36rem;
+    }
+}

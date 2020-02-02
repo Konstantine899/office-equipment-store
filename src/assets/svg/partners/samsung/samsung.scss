@@ -1,31 +1,27 @@
 $samsung__width: 15rem;
-$samsung__height:15rem;
-$samsung__fill: #D3D3D3;
-$samsung__fill-hover:#0964AF;
-$samsung__path:#F2F2F2;
+$samsung__height: 15rem;
+$samsung__fill: #d3d3d3;
+$samsung__fill-hover: #0964af;
+$samsung__path: #f2f2f2;
 
-
-
-.samsung{
-    font-size: 10px;
+.samsung {
+  font-size: 10px;
 }
 
 .samsung {
-    width: $samsung__width;
-    height: $samsung__height;
-    // outline: 1px solid #000;
+  width: $samsung__width;
+  height: $samsung__height;
+  margin: 0 1rem;
+  // outline: 1px solid #000;
 }
 
 .samsung__path-1 {
-    fill: $samsung__fill;
+  fill: $samsung__fill;
 }
-
-
 
 .samsung__path-1:hover {
-    fill: $samsung__fill-hover;
+  fill: $samsung__fill-hover;
 }
-
 
 .samsung__path-3,
 .samsung__path-4,
@@ -33,7 +29,6 @@ $samsung__path:#F2F2F2;
 .samsung__path-6,
 .samsung__path-7,
 .samsung__path-8,
-.samsung__path-9{
-    fill:$samsung__path;
+.samsung__path-9 {
+  fill: $samsung__path;
 }
-

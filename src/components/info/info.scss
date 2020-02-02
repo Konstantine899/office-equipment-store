@@ -41,3 +41,29 @@ $info__description-li: #2f3035;
     color: $info__description-li;
     padding: 0;
 }
+
+
+
+@media(max-width:1240px){
+    .info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100%;
+        padding: 10rem 5rem;
+    }
+}
+
+
+
+@media(max-width:1024px){
+    .info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100%;
+        padding: 10rem 5rem;
+    }
+}

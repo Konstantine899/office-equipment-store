@@ -7,110 +7,229 @@ $main__content-a-hover: yellow;
 $main__content-p: #33cccc;
 $button__catalog: #2f3035;
 $button__catalog-btn-border: #8b67b1;
-$button__catalog-btn-hover:#7f4eb1;
+$button__catalog-btn-hover: #7f4eb1;
 $button__catalog-btn-hover-p: #fff;
 
-
-main{
-    font-size: 10px;
+main {
+  font-size: 10px;
 }
 
 main {
-    margin-left: 0;
-    max-width: 100%;
-    height: 79.4rem;
-    padding-bottom: 9.5rem;
-    background: $main__background;
-    z-index: 0;
+  margin-left: 0;
+  max-width: 100%;
+  height: 79.4rem;
+  padding-bottom: 9.5rem;
+  background: $main__background;
+  z-index: 0;
 }
 
 .main__wrapper {
-    clip-path: circle(105.9rem at 19rem -26.3rem);
-    background: url("../../assets/img/main-img/7.jpg") no-repeat left;
-    background-size: cover;
+  clip-path: circle(105.9rem at 19rem -26.3rem);
+  background: url("../../assets/img/main-img/7.jpg") no-repeat left;
+  background-size: cover;
 }
 
 .main__overlay {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    height: 79.4rem;
-    background-image: linear-gradient(-60deg, $main__line-gradient-one 0%, $main__line-gradient-two 100%);
-    opacity: 0.9;
-    z-index: 1;
-    // outline: 1px solid #000;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 79.4rem;
+  background-image: linear-gradient(
+    -60deg,
+    $main__line-gradient-one 0%,
+    $main__line-gradient-two 100%
+  );
+  opacity: 0.9;
+  z-index: 1;
+  // outline: 1px solid #000;
 }
 
 .main__offset-row {
-    // outline: 1px solid #000;
-    margin-top: -58rem;
-    margin-left: 3rem;
-    display: flex;
-    z-index: 4;
-
+  // outline: 1px solid #000;
+  margin-top: -58rem;
+  margin-left: 3rem;
+  display: flex;
+  z-index: 4;
 }
 
 .main__offset-printer,
 .main__offset-printer-img {
-    // outline: 1px solid #000;
-    width: 40rem;
-    z-index: 9;
+  width: 40rem;
+  z-index: 9;
+  // outline: 1px solid #000;
 }
 
 .main__offset-printer {
-    margin-left: 24.6rem;
+  margin-left: 24.6rem;
 }
 
 .main__content {
-    // outline: 1px solid #000;
-    z-index: 9;
+  // outline: 1px solid #000;
+  z-index: 9;
+  // outline: 1px solid #000;
 }
 
 .main__content span {
-
-    font-size: 3rem;
-    color: $main__context-span;
-    font-weight: 900;
+  font-size: 3rem;
+  color: $main__context-span;
+  font-weight: 900;
 }
 
 .main__content .main__content-a {
-
-    font-size: 3rem;
-    font-weight: 900;
-    color: $main__content-a;
-    text-decoration: underline;
-    border-bottom: none;
+  font-size: 3rem;
+  font-weight: 900;
+  color: $main__content-a;
+  text-decoration: underline;
+  border-bottom: none;
 }
 
 .main__content .main__content-a:hover {
-    color: $main__content-a-hover;
+  color: $main__content-a-hover;
 }
 
 .main__content p {
-    color: $main__content-p;
-    font-size: 3rem;
-    font-weight: 900;
+  color: $main__content-p;
+  font-size: 3rem;
+  font-weight: 900;
 }
 
 .button__catalog {
-    color: $button__catalog;
-    margin-left: -12rem;
+  color: $button__catalog;
+  margin-left: -12rem;
 }
 
 .button__catalog-btn {
-    text-transform: uppercase;
-    margin-top: 11.9rem;
-    font-weight: 700;
-    font-family: Proxima Nova Rg;
-    border: 1px solid $button__catalog-btn-border;
-    border-radius: .9rem;
-    box-shadow: 0rem .3rem .3rem 0rem rgba(126, 81, 185, 0.5);
-    padding: 1.4rem 3.3rem;
-    font-size: 1.5rem;
-    transition: all 0.3s ease-out;
+  text-transform: uppercase;
+  margin-top: 11.9rem;
+  font-weight: 700;
+  font-family: Proxima Nova Rg;
+  border: 1px solid $button__catalog-btn-border;
+  border-radius: 0.9rem;
+  box-shadow: 0rem 0.3rem 0.3rem 0rem rgba(126, 81, 185, 0.5);
+  padding: 1.4rem 3.3rem;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-out;
+  // outline: 1px solid #000;
 }
 
 .button__catalog-btn:hover {
-    background-color: $button__catalog-btn-hover;
-    color: $button__catalog-btn-hover-p;
+  background-color: $button__catalog-btn-hover;
+  color: $button__catalog-btn-hover-p;
+}
+
+@media (max-width: 1224px) {
+  .main__wrapper {
+    clip-path: circle(94.9rem at 19rem -26.3rem);
+    background: url("../../assets/img/main-img/7.jpg") no-repeat left;
+    background-size: cover;
+  }
+  .main__offset-printer,
+  .main__offset-printer-img {
+    // outline: 1px solid #000;
+    width: 35rem;
+    z-index: 9;
+    // outline: 1px solid #000;
+  }
+  .button__catalog-btn {
+    text-transform: uppercase;
+    margin-top: 7.9rem;
+    font-weight: 700;
+    font-family: Proxima Nova Rg;
+    border: 1px solid #8b67b1;
+    border-radius: 0.9rem;
+    box-shadow: 0rem 0.3rem 0.3rem 0rem rgba(126, 81, 185, 0.5);
+    padding: 1.4rem 3.3rem;
+    font-size: 1.5rem;
+    transition: all 0.3s ease-out;
+    // outline: 1px solid #000;
+  }
+  .main__content span {
+    font-size: 2.5rem;
+    color: #33cccc;
+    font-weight: 900;
+  }
+  .main__content .main__content-a {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #fff;
+    text-decoration: underline;
+    border-bottom: none;
+  }
+  .main__content p {
+    color: #33cccc;
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main__wrapper {
+    -webkit-clip-path: circle(94.9rem at 19rem -26.3rem);
+    clip-path: circle(72.9rem at 19rem -26.3rem);
+    background: url(/static/media/7.06cc924d.jpg) no-repeat left;
+    background-size: cover;
+  }
+  .main__offset-row {
+    margin-top: -73rem;
+    margin-left: 3rem;
+    display: flex;
+    z-index: 4;
+  }
+  .main__offset-printer-img {
+    width: 28rem;
+    z-index: 9;
+    // outline: 1px solid #000;
+  }
+  .main__offset-printer {
+    margin-left: 10.6rem;
+    width: 28rem;
+  }
+  .main__offset-printer {
+    margin-left: 10.6rem;
+  }
+  .main__content {
+    z-index: 9;
+    // outline: 1px solid #000;
+    max-width: 37rem;
+  }
+  .button__catalog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2f3035;
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    margin-left: 0;
+    max-width: 100%;
+    height: 115rem;
+    padding-bottom: 9.5rem;
+    background: #f7fbfe;
+    z-index: 0;
+  }
+
+  .main__wrapper {
+    -webkit-clip-path: circle(90.9rem at 19rem -26.3rem);
+    clip-path: circle(122.9rem at -21rem -26.3rem);
+    background: url(/static/media/7.06cc924d.jpg) no-repeat left;
+    background-size: cover;
+  }
+
+  .main__offset-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 4;
+  }
+  .main__offset-printer {
+    width: 48rem;
+    margin: 40rem 0rem 10rem 0rem;
+  }
+  .main__offset-printer-img {
+    width: 48rem;
+    z-index: 9;
+  }
 }

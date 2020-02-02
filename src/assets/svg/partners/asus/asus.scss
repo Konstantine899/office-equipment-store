@@ -1,20 +1,19 @@
 $asus__width: 15rem;
 $asus__height: 15rem;
-$asus__fill: #D3D3D3;
+$asus__fill: #d3d3d3;
 $asus__fill-hover: blue;
 
-.asus{
-    font-size: 10px;
+.asus {
+  font-size: 10px;
 }
-
 
 .asus {
-    width:$asus__width;
-    height: $asus__height;
-    fill: $asus__fill;
-    
+  width: $asus__width;
+  height: $asus__height;
+  fill: $asus__fill;
+  margin: 0 1rem;
 }
 
-.asus:hover { 
-    fill: $asus__fill-hover;
+.asus:hover {
+  fill: $asus__fill-hover;
 }

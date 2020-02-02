@@ -1,21 +1,19 @@
 $acer__width: 15rem;
 $acer__height: 15rem;
-$acer__fill:#D3D3D3;
+$acer__fill: #d3d3d3;
 $acer__fill-hover: green;
 
-.acer{
-    font-size: 10px;
+.acer {
+  font-size: 10px;
 }
 
 .acer {
-    width: $acer__width;
-    height: $acer__height;
-    fill: $acer__fill;
-    
+  width: $acer__width;
+  height: $acer__height;
+  fill: $acer__fill;
+  margin: 0 1rem;
 }
 
-
 .acer:hover {
-   
-    fill: $acer__fill-hover;
+  fill: $acer__fill-hover;
 }

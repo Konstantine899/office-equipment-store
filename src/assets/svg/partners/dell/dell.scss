@@ -1,21 +1,20 @@
-
 $dell__width: 7rem;
 $dell__height: 15rem;
-$dell__fill: #D3D3D3;
+$dell__fill: #d3d3d3;
 $dell__fill-hover: #8d9bd7;
 
-.dell{
-    font-size: 10px;
+.dell {
+  font-size: 10px;
 }
 
-.dell{
-    width: $dell__width;
-    height: $dell__height;
-    // outline: 1px solid #000;
-    fill: $dell__fill;
+.dell {
+  width: $dell__width;
+  height: $dell__height;
+  // outline: 1px solid #000;
+  fill: $dell__fill;
+  margin: 0 1rem;
 }
 
-.dell:hover{
-   
-    fill: $dell__fill-hover;
+.dell:hover {
+  fill: $dell__fill-hover;
 }

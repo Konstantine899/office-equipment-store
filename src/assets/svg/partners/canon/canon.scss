@@ -1,19 +1,19 @@
 $canon__width: 15rem;
 $canon__height: 15 rem;
-$canon__fill: #D3D3D3;
-$canon__fill-hover: #E85454;
-
+$canon__fill: #d3d3d3;
+$canon__fill-hover: #e85454;
 
 .canon {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 .canon {
-    width: $canon__width;
-    height: $canon__height;
-    fill: $canon__fill;
-    // outline: 1px solid #000;
+  width: $canon__width;
+  height: $canon__height;
+  fill: $canon__fill;
+  margin: 0 1rem;
+  // outline: 1px solid #000;
 }
-.canon:hover {   
-    fill: $canon__fill-hover;
+.canon:hover {
+  fill: $canon__fill-hover;
 }
