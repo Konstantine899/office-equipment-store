@@ -3,7 +3,11 @@ import './ink-page.scss';
 
 const InkPage = () =>{
     return(
-        <div>Чернила</div>
+        <div>
+            <h1>
+                Чернила проверка
+            </h1>
+        </div>
     );
 };
 
