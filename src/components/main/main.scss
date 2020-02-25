@@ -130,7 +130,7 @@ main {
     margin-top: 79px;
     font-weight: 700;
     font-family: Proxima Nova Rg;
-    border: 1px solid #8b67b1;
+    border: 1px solid $button__catalog-btn-border;
     border-radius: 9px;
     box-shadow: 0px 3px 3px 0px rgba(126, 81, 185, 0.5);
     padding: 14px 33px;
@@ -140,18 +140,18 @@ main {
   }
   .main__content span {
     font-size: 2.5rem;
-    color: #33cccc;
+    color: $main__context-span;
     font-weight: 900;
   }
   .main__content .main__content-a {
     font-size: 2.5rem;
     font-weight: 900;
-    color: #fff;
+    color: $main__content-a;
     text-decoration: underline;
     border-bottom: none;
   }
   .main__content p {
-    color: #33cccc;
+    color: $main__content-p;
     font-size: 2.5rem;
     font-weight: 900;
   }
@@ -202,7 +202,7 @@ main {
     max-width: 100%;
     height: 1150px;
     padding-bottom: 95px;
-    background: #f7fbfe;
+    background: $main__background;
     z-index: 0;
   }
 

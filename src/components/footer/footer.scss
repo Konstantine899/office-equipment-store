@@ -1,8 +1,6 @@
 $background__color: #f7fbfe;
 $footer__p: black;
 $footer__contacts__a__color: black;
-$fontSize: 2.2rem;
-$fontSize__h4: 2.4rem;
 
 footer {
   font-size: 10px;
@@ -15,20 +13,20 @@ footer {
   flex-direction: row;
   background: $background__color;
   max-width: 100%;
-  padding: 10rem 5rem;
+  padding: 100px 50px;
 }
 
 footer h4 {
-  font-size: $fontSize__h4;
+  font-size: 2.4rem;
 }
 
 .footer__info {
-  margin: 0 1rem;
+  margin: 0px 10px;
   // outline: 1px solid #000;
 }
 
 .footer__info p {
-  font-size: $fontSize;
+  font-size: 2.2rem;
   line-height: 1.6;
   color: $footer__p;
 }
@@ -43,30 +41,30 @@ footer h4 {
 .visa,
 .maestro,
 .mastercard {
-  width: 8rem;
-  height: 8rem;
+  width: 80px;
+  height: 80px;
   // outline: 1px solid #000;
 }
 
 .footer__menu {
-  margin: 0 1rem;
+  margin: 0px 10px;
   // outline: 1px solid #000;
 }
 
 .footer__menu__info {
-  margin: 0 1rem;
+  margin: 0px 10px;
   // outline: 1px solid #000;
 }
 
 .footer__contacts {
   display: flex;
   flex-direction: column;
-  margin: 0 1rem;
+  margin: 0px 10px;
   // outline: 1px solid #000;
 }
 .footer__contacts a {
-  font-size: $fontSize;
-  padding: 0.5rem;
+  font-size: 22px;
+  padding: 5px;
   color: $footer__contacts__a__color;
 }
 
@@ -75,8 +73,8 @@ footer h4 {
 }
 
 .footer__contacts p {
-  margin: 1rem;
-  font-size: $fontSize;
+  margin: 10px;
+  font-size: 22px;
   color: $footer__p;
 }
 
@@ -84,29 +82,29 @@ footer h4 {
   footer {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    background: #f7fbfe;
+    background: $background__color;
     max-width: 100%;
-    padding: 10rem 5rem;
+    padding: 100px 50px;
   }
   .footer__info {
-    width: 30rem;
-    margin: 0 1rem;
+    width: 300px;
+    margin: 0px 1px;
   }
   .footer__menu {
-    width: 30rem;
-    margin: 0 1rem;
+    width: 300px;
+    margin: 0px 1px;
   }
   .footer__menu__info {
-    margin: 0 1rem;
-    width: 30rem;
+    margin: 0px 1px;
+    width: 300px;
   }
   .footer__contacts {
     display: flex;
     flex-direction: column;
-    margin: 0 1rem;
-    width: 30rem;
+    margin: 0px 1px;
+    width: 300px;
   }
 }

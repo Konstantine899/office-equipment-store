@@ -7,18 +7,18 @@ $footer__information-a: #2f3035;
 .footer__information ul{
     display: flex;
     flex-direction: column;
-    padding: 0rem;
-    margin: 0rem;
+    padding: 0px;
+    margin: 0px;
     // outline: 1px solid #000;
 }
 .footer__information ul li{
-    padding: .5rem;
+    padding: 5px;
 }
 .footer__information ul li a{
-    padding: 0rem;
-    margin: 0rem;
+    padding: 0px;
+    margin: 0px;
     color: $footer__information-a;
-    font-size: 2.2rem;
+    font-size: 22px;
 }
 
 .footer__information ul li a:hover{
